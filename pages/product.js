@@ -35,16 +35,24 @@ const Product = ({ products }) => {
       name: "Action",
       cell: (row) => (
         <>
-        <button onClick={()=> alert("Sorry, edit function is not implemented yet!")} className="btn btn-primary me-2">
+          <button
+            onClick={() =>
+              alert("Sorry, edit function is not implemented yet!")
+            }
+            className="btn btn-primary me-2"
+          >
             Edit
-        </button>
-        <button onClick={()=> alert("Sorry, delete function is not implemented yet!")} className="btn btn-danger">
+          </button>
+          <button
+            onClick={() =>
+              alert("Sorry, delete function is not implemented yet!")
+            }
+            className="btn btn-danger"
+          >
             Delete
-        </button>
+          </button>
         </>
-        
-        
-      )
+      ),
     },
   ];
 
@@ -59,7 +67,7 @@ const Product = ({ products }) => {
       <Layout>
         <div className="container pt-4">
           <h3 className="pb-2">Product Collection - Table</h3>
-         
+
           <DataTable
             columns={columns}
             data={allProducts}
@@ -67,16 +75,21 @@ const Product = ({ products }) => {
             highlightOnHover
             title="Product listing"
             pagination
-            actions={ <div className="text-end">
-            <input
-              type="text"
-              className="rounded border-1"
-              style={{ padding: "3px 10px", width: "300px", fontSize: "15px" }}
-              placeholder="Find products here"
-              onChange={handleFilter}
-            ></input>
-          </div>}
-            
+            actions={
+              <div className="text-end">
+                <input
+                  type="text"
+                  className="rounded border-1"
+                  style={{
+                    padding: "3px 10px",
+                    width: "300px",
+                    fontSize: "15px",
+                  }}
+                  placeholder="Find products here"
+                  onChange={handleFilter}
+                ></input>
+              </div>
+            }
           ></DataTable>
         </div>
       </Layout>
