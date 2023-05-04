@@ -25,21 +25,21 @@ export default function About({ video }) {
           <p>{m.overview}</p>
           <button
               type="button"
-              class="btn btn-primary"
+              className="btn btn-primary"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
             >
               WATCH NOW
             </button>
             <div
-              class="modal fade"
+              className="modal fade"
               id="exampleModal"
               tabindex="-1"
               aria-labelledby="exampleModalLabel"
               aria-hidden="true"
             >
-              <div class="modal-dialog  modal-dialog-centered modal-xl ">
-                <div class="modal-content">
+              <div className="modal-dialog  modal-dialog-centered modal-xl ">
+                <div className="modal-content">
                   
                   <iframe style={{height: 500}} src={YT + key} frameborder="0" allowfullscreen></iframe>
                 
