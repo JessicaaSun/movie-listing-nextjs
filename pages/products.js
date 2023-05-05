@@ -65,7 +65,7 @@ const Product = ({ products }) => {
   return (
     <>
       <Layout>
-        <div className="container pt-4">
+        <div className="container pt-4 pb-5">
           <h3 className="pb-2">Product Collection - Table</h3>
 
           <DataTable
